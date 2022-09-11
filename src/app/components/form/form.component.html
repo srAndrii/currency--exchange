@@ -1,0 +1,33 @@
+<div class="form" >
+  <div class="inputs">
+    <input
+      type="number"
+      class="input"
+      [value]="input_1"
+      (input)="onInput_1($event)"
+    >
+
+
+    <select [(ngModel)]="selected1"  (change)="onChange1($event)" >
+      <option *ngFor="let selectOption of selectOptions">{{selectOption}}</option>
+    </select>
+
+  </div>
+
+  <div class="inputs">
+
+    <input
+      type="number"
+      class="input"
+      [value]="input_2"
+      (input)="onInput_2($event)"
+    >
+
+    <select [(ngModel)]="selected2" (change)="onChange2($event)" >
+      <option  *ngFor="let selectOption of selectOptions" >{{selectOption}}</option>
+    </select>
+
+  </div>
+
+</div>
+

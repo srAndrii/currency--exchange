@@ -1,0 +1,22 @@
+.app{
+  width: 100%;
+  height: 100vh;
+
+  background-color: #292829;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .forms{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .formInput{
+      margin: 0 25px;
+    }
+
+  }
+
+}
