@@ -1,33 +1,19 @@
-<div class="form" >
-  <div class="inputs">
-    <input
-      type="number"
-      class="input"
-      [value]="input_1"
-      (input)="onInput_1($event)"
-    >
+<div class="form">
+    <div class="inputs">
+        <input type="number" class="input" [value]="input_1" (input)="onCurrency_1($event)" />
 
+        <select [(ngModel)]="selected_1" (change)="onCurrency_1($event)">
+            <option *ngFor="let currency of nbuStat">
+                {{ currency.cc }}
+            </option>
+        </select>
+    </div>
 
-    <select [(ngModel)]="selected1"  (change)="onChange1($event)" >
-      <option *ngFor="let selectOption of selectOptions">{{selectOption}}</option>
-    </select>
+    <div class="inputs">
+        <input type="number" class="input" [value]="input_2" (input)="onCurrency_2($event)" />
 
-  </div>
-
-  <div class="inputs">
-
-    <input
-      type="number"
-      class="input"
-      [value]="input_2"
-      (input)="onInput_2($event)"
-    >
-
-    <select [(ngModel)]="selected2" (change)="onChange2($event)" >
-      <option  *ngFor="let selectOption of selectOptions" >{{selectOption}}</option>
-    </select>
-
-  </div>
-
+        <select [(ngModel)]="selected_2" (change)="onCurrency_2($event)">
+            <option *ngFor="let currency of nbuStat">{{ currency.cc }}</option>
+        </select>
+    </div>
 </div>
-
