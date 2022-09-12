@@ -3,7 +3,7 @@
         <input type="number" class="input" [value]="input_1" (input)="onCurrency_1($event)" />
 
         <select [(ngModel)]="selected_1" (change)="onCurrency_1($event)">
-            <option *ngFor="let currency of nbuStat">
+            <option *ngFor="let currency of nbuStat" [selected]="currency.cc === 'UAH'">
                 {{ currency.cc }}
             </option>
         </select>
@@ -13,7 +13,7 @@
         <input type="number" class="input" [value]="input_2" (input)="onCurrency_2($event)" />
 
         <select [(ngModel)]="selected_2" (change)="onCurrency_2($event)">
-            <option *ngFor="let currency of nbuStat">{{ currency.cc }}</option>
+            <option *ngFor="let currency of nbuStat" [selected]="currency.cc === 'USD'">{{ currency.cc }}</option>
         </select>
     </div>
 </div>

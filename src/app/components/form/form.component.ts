@@ -13,8 +13,8 @@ export class FormComponent implements OnInit {
     input_1 = 0
     input_2 = 0
 
-    selected_1: string = 'CAD'
-    selected_2: string = 'CAD'
+    selected_1: string = 'UAH'
+    selected_2: string = 'USD'
 
     nbuStat: INbuStat[] = []
 
