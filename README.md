@@ -1,3 +1,10 @@
+## [Link](https://currency-exchange001.netlify.app/)
+![currency](https://user-images.githubusercontent.com/90868495/189534683-534ae273-b9dc-4898-a96d-3546c794fca6.gif)
+
+
+
+
+
 # Itop1000
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
